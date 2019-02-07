@@ -1,0 +1,53 @@
+<html>
+<head></head>
+<body>
+<style>
+body{
+background-color:#b992a0;
+}
+h3{
+font-size:45px;
+color: Red;
+}
+
+main{
+background-color:pink;
+color:red;
+}
+#mychannel{
+position:absolute;
+top:550px;
+right:150px;
+}
+
+aside{
+background-color:pink;
+color:red;
+}
+
+
+</style>
+<h3>Welcome to The Nerd Herd</h3>
+<main>
+<img src="twitchpic.jpg"height="200px" width="200px"/>
+<p>Welcome everyone to The Nerd Herd! My name is Nerdmom630 and you can</br>find me on Twitch wednesday and thursday at 10:30am.</p>
+<p>My favorite games to play are story based horror games.</br>One of my favorite sets of streams i've </br>done was with Resident Evil 7.</p>
+</main>
+
+<aside>
+<h5>Watch me Here</h5>
+<p>You can watch me here if i'm live! </br>Definitely come join the chat and hang out with The Nerd Herd!</p>
+</aside>
+<script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+<div id="mychannel"></div>
+<script type="text/javascript">
+  var options = {
+    width: 400,
+    height: 300,
+    channel: "nerdmom630",
+  };
+  var player = new Twitch.Player("mychannel", options);
+  player.setVolume(0.5);
+</script>
+</body>
+</html>
